@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/manhinhthanhtoan">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarThanhToan"
+        app:title="Thanh Toán"
+        android:background="#8777"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        >
+
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/lvSP"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        >
+    </ListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/background_thanhtoan">
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/tvTongTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: "
+            android:textColor="#FFF"
+            android:textSize="30dp"/>
+        <Button
+            android:id="@+id/btnThanhToan"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Thanh Toán"
+            android:textColor="#FFF"
+            android:background="@drawable/addtocart"/>
+        <ImageView
+            android:id="@+id/update_price"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/update_price"
+            android:layout_alignParentRight="true"
+            android:layout_margin="7dp"/>
+    </RelativeLayout>
+</LinearLayout>

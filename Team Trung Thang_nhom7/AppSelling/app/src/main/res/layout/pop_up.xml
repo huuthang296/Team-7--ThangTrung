@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF8E1"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarDatSanPham"
+        app:title="Đặt sản phẩm"
+        android:background="#8777"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center"
+        >
+
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/pop_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/breoccoli"/>
+    <TextView
+        android:id="@+id/pop_TenSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Test"
+        android:textSize="30dp"
+        android:textColor="#B71C1C"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/pop_GiaSanPham"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giá: 120.000 Đ"
+        android:textColor="#D50000"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng:"
+            android:textSize="20dp"
+            android:textColor="#D50000"/>
+        <EditText
+            android:id="@+id/pop_SoLuongSanPham"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:inputType="number"
+            android:hint="0"
+            android:text="1"
+            android:textColor="#BF360C"
+            android:textColorHint="#BF360C"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/pop_ThemVaoGio"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:background="@drawable/addtocart"
+        android:text="Thêm vào giỏ "/>
+
+</LinearLayout>

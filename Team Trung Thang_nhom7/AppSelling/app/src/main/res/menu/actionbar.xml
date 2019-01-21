@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Pizza"
+        android:id="@+id/Pizza" />
+    <item
+        android:title="Thức uống"
+        android:id="@+id/Drink"/>
+    <item
+        android:title="Thức ăn nhanh"
+        android:id="@+id/Food"/>
+    <item
+        android:id="@+id/thanhtoan"
+        android:title="Thanh Toán"
+        android:icon="@drawable/cart"
+        app:showAsAction="always"/>
+</menu>

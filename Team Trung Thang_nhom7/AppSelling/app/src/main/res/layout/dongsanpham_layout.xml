@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgSanpham"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tenSanPham"
+        android:text="Thanh"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/imgSanpham" />
+
+    <TextView
+        android:id="@+id/giaSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgSanpham"
+        android:layout_below="@+id/tenSanPham"
+        android:text="120.000"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/loaiSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/giaSanPham"
+        android:layout_toRightOf="@id/imgSanpham"
+        android:text= "Nước uống"
+        android:textSize="10dp"/>
+
+    <EditText
+        android:id="@+id/SoLuongSanPham"
+        android:layout_below="@+id/giaSanPham"
+        android:layout_alignParentRight="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="0"
+        android:textSize="15sp"
+        android:inputType="number">
+    </EditText>
+
+
+</RelativeLayout>

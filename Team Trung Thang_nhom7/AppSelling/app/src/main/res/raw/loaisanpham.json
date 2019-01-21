@@ -1,0 +1,17 @@
+[
+  {
+    "id":"1",
+    "tenloaisanpham":"Pizza",
+    "hinhanhloaisanpham":"http://www.deliciouspizza.ca/images/noPicPizza2.png"
+  },
+  {
+    "id":"2",
+    "tenloaisanpham":"Th\u1ee9c u\u1ed1ng",
+    "hinhanhloaisanpham":"https:\/\/vi.seaicons.com\/wp-content\/uploads\/2017\/03\/soft-drink-icon.png"
+  },
+  {
+    "id":"3",
+    "tenloaisanpham":"\u0102n k\u00e8m",
+    "hinhanhloaisanpham":"https:\/\/cdn.icon-icons.com\/icons2\/281\/PNG\/256\/Guacamole-icon_30330.png"
+  }
+]

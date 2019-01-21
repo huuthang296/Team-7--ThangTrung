@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayoutManHinhChinh"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarManHinhChinh"
+                app:title="Tle Pizza"
+                android:background="#8777"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+            </android.support.v7.widget.Toolbar>
+            <ViewFlipper
+                android:id="@+id/viewflipperManHinhChinh"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/background">
+
+            </ViewFlipper>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#D7CCC8">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mới ra lò"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#f12f4c"
+                    />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerviewManHinhChinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationManHinhChinh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#000000"
+            app:headerLayout="@layout/nav_header_main"
+            >
+            <ListView
+                android:id="@+id/listviewNavigationManHinhChinh"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="180dp">
+            </ListView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thực Đơn"
+                android:textSize="20dp"
+                android:layout_marginTop="200dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="230dp">
+                <LinearLayout
+                    android:id="@+id/ButtonPizza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="30dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/pizza_menu"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Pizza"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ButtonThucUong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/ButtonPizza"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/thucuong_menu"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Thức uống"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ButtonThucAn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/ButtonThucUong"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/thucan_menu"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Thức ăn nhanh"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/infotext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thông tin thêm"
+                    android:layout_below="@id/ButtonThucAn"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"/>
+                <LinearLayout
+                    android:id="@+id/ButtonInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/infotext"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/info_menu"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Thông tin liên hệ"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</android.support.constraint.ConstraintLayout>
